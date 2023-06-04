@@ -1,0 +1,262 @@
+/* Globals */
+body{
+  box-sizing: border-box;
+}
+
+/* Header Section */
+header{
+  position: sticky;
+  top: 0;
+  background-color: rgb(22, 20, 20);
+  display: flex;
+  font-size: 1.7em;
+  z-index: 1;
+  align-items: center;
+}
+.navbar {
+  padding: .5em 5em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a{
+  color: #fefefe;
+  padding: 0 2em 0 0;
+}
+.cart{
+  cursor: pointer;
+  color: #fefefe;
+  margin-left: 4em;
+}
+.counter_cart {
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.973);
+  color: white;
+  border-radius: 50%;
+  font-size: 0.5em;
+  top: 13%;
+  right: 125px;
+  padding: .2em .6em;
+  position: absolute;
+  display: none;
+}
+
+/* Hero Section */
+.hero{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  text-align: left;
+}
+.hero-img{
+  grid-column: 2/3;
+  width: 90%;
+  margin: auto;
+}
+.title-home{
+  padding-top: 1em;
+  color: #000;
+}
+.linehover_home{ 
+  width: 100%;
+  border: solid black;
+  margin-bottom: 25px;
+}
+.subtitle-home{
+  font-size: 1.5em;
+  font-weight: 550; 
+  line-height: 1.3em;   
+}
+.texthover{
+  grid-row: 1/2;
+  padding-top: 5em;
+}
+.texthover{
+  padding-left: 7em;
+}
+.box_buttom{
+  padding-top: 1em;
+}
+.products_button{
+  margin-right: 1em;
+  font-size: 1.2em;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px black;
+  background-color: #fefefe;
+  color: #000;
+  padding: .5em 1em;
+}
+.products_button:hover{
+  background-color: #000;
+  color: #fefefe;
+}
+
+/* Main Section */
+#productsMain{
+  padding-top: 5em;
+}
+/* Services Section */
+#services{
+  text-align: center;
+  margin: 0 7em;
+  padding-top: 7em;
+}
+#services hr{
+  width: 90%;
+  border: .5px solid black;
+}
+#services h4{
+  padding: .5em 2em 1.5em;
+}
+.services_list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.box-services-list li{
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.box-services-list i{
+  margin-top: .5em;
+  font-size: 5em;
+}
+/* Shop Content Section */
+#shopContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5em;
+  gap: 1em;
+  align-items: center;
+  padding: 1em;
+  text-align: center;
+}
+.title_shopContent{
+  margin-top: 5em;
+  grid-column: 1/4;
+  margin-bottom: 5em;
+}
+.title_shopContent hr{
+  width: 90%;
+  margin-bottom: 2em;
+  border: .5px solid black;
+}
+.product_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.image_box img {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+}
+.image_box {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+}
+.image-1 {
+  width: 5%;
+}
+.product_card h3 {
+  font-size: 1.5em;
+}
+.image_box img.image-9 {
+  width: 80%;
+  height: 150px;
+}
+
+/* CSS for Modal */
+.modal_container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.remove-button i {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-height: 80%;
+  overflow-y: scroll;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.close-modal-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.product_info {
+  display: flex;
+  flex-direction: column;
+  margin: 0em 4em 2em;
+}
+.content_product_card {
+  display: grid;
+  grid-template-columns: 54% 15% 7% 20% 4%;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.content_product_card h3 {
+  margin: auto 0;
+}
+.content_product_card p {
+  margin: auto 0;
+  padding-left: 1em;
+}
+.quantity-selector input {
+  display: flex;
+  justify-self: center;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.subtotal{
+  padding-left: 1em;
+}
+.total_cart {
+  font-size: 25px;
+  padding: 20px;
+  text-align: right;
+  padding-top: 20px;
+}
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.empty_cart{
+  width: 15%;
+}
+.message_empty{
+  text-align: center;
+}
+/* Footer */
+footer{
+  background-color: #000;
+  margin: 0;
+  padding: 2em;
+}

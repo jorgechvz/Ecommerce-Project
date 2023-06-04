@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" type="module"></script>
+    <title>TechCommerce | Shopping Cart</title>
+</head>
+<body>
+    <header> 
+        <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="#shopContent">Products</a>
+          <a href="#services">Services</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <i class="cart fa fa-shopping-cart shopping_cart" id="open-modal-btn"></i><span class="counter_cart"></span>
+        </nav>
+    </header>
+    <div class="hero">
+      <img class="hero-img" src="images/hero_image3.jpg" alt="hover-homepage">
+      <div class="texthover">
+          <h1 class="title-home">Discover the latest technology</h1>
+          <hr class="linehover_home">
+          <h2 class="subtitle-home">Get your hands on the newest gadgets and tech products from around the world</h2>
+          <div class="box_buttom">
+            <a class="products_button btn btn-outline-primary active" href="#shopContent">Our Products</a>
+            <a class="products_button btn btn-outline-secondary" href="#productsMain">Contact Now</a>
+          </div>
+      </div>
+    </div>
+    <main id="productsMain">
+        <div id="services">
+          <h2>Our services</h2>
+          <hr>
+          <h4>At our online store, we offer a wide range of services to improve your shopping experience and make sure you find what you need.</h4>
+          <ul class="services_list">
+            <div class="box-services-list">
+              <li>Personalized advice</li>
+              <i class="fa fa-comment" aria-hidden="true"></i>
+            </div>
+            <div class="box-services-list">
+              <li>Fast shipping</li>
+              <i class="fa fa-truck" aria-hidden="true"></i>
+            </div>
+            <div class="box-services-list">
+              <li>Easy returns</li>
+              <i class="fa fa-undo" aria-hidden="true"></i>
+            </div>
+            <div class="box-services-list">
+              <li>Quality guarantee</li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+          </ul>
+        </div>
+        <div id="shopContent" class="shop_content">
+          <div class="title_shopContent">
+            <h2>Unleash Your Inner Tech Wizard</h2>
+            <hr>
+            <h4>Explore our wide range of cutting-edge products and find the perfect fit for your needs</h4>
+          </div>
+        </div> 
+        <div id="shopping-cart-modal" class="modal_container">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2>Products in cart</h2>
+              <span class="close-modal-btn" id="close-modal-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+              <div class="product_info"></div>
+            </div>
+            <div class="modal-footer">
+              <button id="continue-shopping-btn" class="btn btn-outline-primary">Return Shop</button>
+              <button id="go-to-checkout-btn" class="btn btn-outline-primary">Pay</button>
+              <button id="empty-cart-btn" class="btn btn-outline-primary">Empty Cart</button>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+        <li class="nav-item"><a href="#shopContent" class="nav-link px-2 text-white">Products</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link px-2 text-white">Services</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About Us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact</a></li>
+      </ul>
+      <p class="text-center text-white">&copy; <span class="copyright"></span> TechCommerce | Design by Jorge A. Chavez</p>
+    </footer>
+</body>
+</html>

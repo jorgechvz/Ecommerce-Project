@@ -1,0 +1,32 @@
+URL: https://jorgechvz.github.io/CSE-121B-Javascript-Language/Final%20Project/index.html
+
+The structure and behavior of the Shopping Cart are as follows:
+
+Imports the "products.js" module which contains the available products for the online store.
+
+Selects the necessary DOM elements for the program, such as the store content, product information, shopping cart modal buttons, etc.
+
+Global variables are defined for the cart and cart total.
+
+The necessary functions are defined to create products, add products to the cart, display a message if the cart is empty, count the products in the cart, empty the cart, update the cart total, remove a product from the cart, show the cart function and render function.
+
+-createProducts(): Creates the products that will be displayed on the web page and adds them to the page.
+
+-addToCart(): Adds products to the shopping cart.
+
+-messageEmpty(): Displays a message when the cart is empty.
+
+-counterCart(): Counts the number of products in the cart.
+
+-emptyCart(): Empties the shopping cart.
+
+-updateTotalCart(): Updates the shopping cart total.
+
+-removeFromCart(): Removes a specific product from the shopping cart.
+
+-ShowTheCart(): displays the shopping cart in a modal
+
+-renderCart(): Function to render cart
+
+Execution: The program starts by executing the createProducts() function. Then, the actions that occur when different buttons on the web page are clicked are described: When the "Add to Cart" button is clicked, the addToCart() function is called. When the cart is emptied, the emptyCart() function is called. When a product is removed from the cart, the removeFromCart() function is called.
+
